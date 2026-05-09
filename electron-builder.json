@@ -1,0 +1,38 @@
+{
+  "appId": "com.tarot.mystical",
+  "productName": "塔罗牌 Mystical",
+  "directories": {
+    "output": "release-v2.1.0-final"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "public/**/*"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "塔罗牌 Mystical",
+    "language": "2052",
+    "perMachine": true,
+    "deleteAppDataOnUninstall": true
+  },
+  "mac": {
+    "target": ["dir"],
+    "icon": "public/icon.icns"
+  },
+  "linux": {
+    "target": ["dir"],
+    "icon": "public/icon.png"
+  }
+}
